@@ -6,13 +6,13 @@ import {colors} from './components/utils/colors';
 
 export default function App() {
   const [focusSubject, setFocusSubject]=useState(null);
+  console.log("yolo");
   return (
     <View style={styles.container}>
 
       { focusSubject ? 
         <Text> Build the timer </Text> : 
         <Focus addSubject = {setFocusSubject} />
-        console.log("yolo")
       }
       <Text>{focusSubject}</Text>
     </View>
