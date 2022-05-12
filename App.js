@@ -12,6 +12,7 @@ export default function App() {
       { focusSubject ? 
         <Text> Build the timer </Text> : 
         <Focus addSubject = {setFocusSubject} />
+        console.log("yolo")
       }
       <Text>{focusSubject}</Text>
     </View>
